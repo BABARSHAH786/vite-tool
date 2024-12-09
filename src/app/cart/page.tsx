@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { FaHeart } from "react-icons/fa";
 export default function Cart() {
   return (
@@ -23,7 +22,7 @@ export default function Cart() {
             height={150}
           />
           <div>
-            <p>Men's Short-Sleeve Running Top</p>
+            <p>Men&apos;s Short-Sleeve Running Top</p>
             <p>Ashen Slate/Cobalt Bliss</p>
             <FaHeart />
            
