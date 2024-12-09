@@ -6,13 +6,13 @@ import { FaCartShopping } from "react-icons/fa6";
 export default function SignUP() {
     return (
         <div>
-            <div className="w-[1200px] h-[1125px]">
+            <div className=" max-ss:h-[511px] w-[1200px] h-[1125px]">
 
-
+{/* max-ss:flex max-ss:justify-center */}
                 {/* white work */}
 
-                <div className="w-[1305px] h-[781px] top-[200px] gap-[129px] flex">
-                <div className="w-[653px] h-auto ">
+                <div className="max-md:ml-[60px] max-md:grid w-[1305px] max-ss:h-[211px] h-[781px] top-[200px] gap-[129px] max-ss:ml-6 max-ss:grid flex">
+                <div className="max-ss:w-[331px]  w-[653px] h-auto ">
 
                 <Image
           className=""
@@ -22,7 +22,7 @@ export default function SignUP() {
           height={653}
         />
         </div>
-                    <div className="w-[376px] h-[1041px]  ">
+                    <div className="w-[376px] h-[1041px] max-ss:h-[211px] ">
                         <p className="w-[376px] mt-6 leading-[48px] text-[48px] font-medium  ">Nike Air Force 1 
 PLT.AF.ORM</p>
                         <div className="w-[374px] h-[342px] top-[75px] left-[-8px]">

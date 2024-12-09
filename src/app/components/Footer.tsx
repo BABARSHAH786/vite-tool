@@ -1,9 +1,10 @@
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube,  FaLandmark } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Footer(){
     return(
-        <div className="w-[1440px] h-[331px] bg-[rgb(17,17,17)] ">
-                 <footer className=" h-[241px]   flex text-[#FFFFFF] ">
+        <div className="max-ss:w-[440px] max-ss:h-[340px] max-ss:mt-[440px] w-[1440px] h-[331px] bg-[rgb(17,17,17)] ">
+                 <footer className="  h-[241px]   flex text-[#FFFFFF] ">
 <div className='flex ml-[34px]  mt-[40px] '>
 <div className='w-[245px] '> 
       <li className=" list-none font-semibold text-[16px] mb-[20px]">Find A Store</li>
@@ -16,7 +17,7 @@ export default function Footer(){
 
       </div>
       {/* 2 */}
-      <div className='w-[245px] '> 
+      <div className='max-ss:ml-[-80px] w-[245px] '> 
       <div className="  font-semibold text-[16px] mb-[20px]">GET HELP</div>
       <div className='text-[10px] gap-[20px] grid text-[#7E7E7E] '>
 
@@ -24,15 +25,18 @@ export default function Footer(){
       <li className="list-none">Delivery</li>
       <li className="list-none">Returns</li>
       <li className="list-none">Payment Options </li>
-      <li className="list-none">Contact Us On Nike.com inquiries</li>
+      <Link className="relative  " href="/contact">
+          
+      <li className="list-none mb-3">Contact Us On Nike.com inquiries</li>
       <li className="list-none">Contact Us On All other inquiries</li>
+      </Link>
   </div>
 
       </div>
 
 
       {/* 3 */}
-      <div className='w-[245px] '> 
+      <div className='max-ss:hidden w-[245px] '> 
       <div className="  font-semibold text-[16px] mb-[20px]">ABOUT NIKE</div>
       <div className='text-[10px] gap-[20px] grid text-[#7E7E7E]'>
 
@@ -46,7 +50,7 @@ export default function Footer(){
 </div>
 
       {/* 4 */}
-      <div className='flex gap-3 ml-[350px]'> 
+      <div className='max-ss:hidden flex gap-3 ml-[350px]'> 
       <FaFacebook className='bg-black rounded-[30px] ' size={30} color="gray" />
       <FaTwitter className='bg-black rounded-[30px]' size={30} color="gray" />
       <FaYoutube className='bg-black rounded-[30px]' size={30} color="gray" />
@@ -71,11 +75,11 @@ export default function Footer(){
 
 {/* bottom */}
 <div className='w-[1372px]  h-[62px] text-white mt-[56px] ml-11 '>
-<div className='w-[px]  h-[32px] flex gap-3 text-[11px] '>
+<div className='w-[px]  h-[32px] flex flex-wrap gap-3 text-[11px] '>
    <FaLandmark />
    <p>India</p>
-   <p className='ml-[100px] text-[#7E7E7E] '>© 2023 Nike, Inc. All Rights Reserved</p>
-   <div className='text-[10px] gap-3  text-[#7E7E7E] flex ml-[456px] '>
+   <p className='max-ss:ml-2 ml-[100px] text-[#7E7E7E] '>© 2023 Nike, Inc. All Rights Reserved</p>
+   <div className='text-[10px] gap-3  text-[#7E7E7E] flex flex-wrap ml-[456px] '>
 
 <li className="list-none ml-2">Guide</li>
 <li className="list-none ml-2">Term of Sale</li>

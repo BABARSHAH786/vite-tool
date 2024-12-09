@@ -2,16 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 export default function SignUP() {
     return (
-        <div className="w-[1440px ]  flex ">
+        <div className="max-ss:h-auto max-ss:w-[391px] w-[1440px ]  flex ">
         <div className="w-[260px ] h-[849px] mt-[300px] ">
         </div>
-        <div className="w-[1092px ] flex ">
+        <div className="max-ss:w-auto w-[1092px ] flex flex-wrap ">
         
           
 
            
            {/****************************  prd original */}
-           <div className="w-[348px ] h-[533px] ml-12 flex mt-12 gap-4 ">
+           <div className="w-[348px ] h-[533px] ml-12 flex  mt-12 gap-4 ">
            <div className="w-[348px ] h-[510px]">
            <Image
           className=""
