@@ -1,3 +1,7 @@
+import * as React from "react"
+
+
+
 import Image from "next/image";
 // import Link from "next/link";
 export default function SecTop() {
@@ -33,6 +37,11 @@ export default function SecTop() {
 
            </div>
            </div>
+
+
+
+
+
 
            {/* prd */}
            <div className="max-ss:hidden max-ss:mt-[-340px] w-[340px ] h-[52px]">

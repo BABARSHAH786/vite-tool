@@ -62,7 +62,7 @@ export default function SecEnd() {
         </div>
 
         {/* order list */}
-        <section className="max-ss:hidden w-[880px] h-[192px] flex flex-wrap gap-10 gap-y-4  ml-[280px]  mt-[100px] ">
+        <section className="max-ss:hidden w-[880px] h-[192px] flex flex-wrap    justify-between   gap-10 gap-y-4  ml-[280px]  mt-[100px] ">
 
                   <div> 
                         <div className="  font-semibold text-[18px] ">Icons</div>
