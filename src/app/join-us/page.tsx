@@ -11,10 +11,10 @@ export default function JoinUs() {
             {/* login work */}
 
             <div className="">
-                <div className="w-[380px] h-[833px] ml-[530px] ">
+                <div className="max-ss:ml-9 max-md:ml-9   w-[380px] h-[833px] ml-[530px] ">
                     <div className="w-[324px] h-[180px] mt-7 left-[28px] relative ">
                     <Image
-      className="ml-12 "
+      className="max-ss:hidden ml-12 max-md:hidden "
       src={"/Vector8.png"}
       alt=""
       width={78.47}

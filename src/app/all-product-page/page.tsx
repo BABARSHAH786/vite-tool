@@ -1,10 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import SidebrPrdAll from "../components/SidebrPrdAll";
-export default function SignUP() {
+import {  FaCaretDown, FaFilter } from "react-icons/fa";
+export default function AllProduct() {
     return (
       <>
-        <div className="max-ss:h-auto max-ss:w-[391px] w-[1440px ]  flex ">
+      <div className="flex">
+      <p className="ml-12 text-[24px ]  font-bold flex ">New (500)</p>
+        <span className="flex ml-[900px] ">Hide Filters
+          <span><FaFilter /></span>
+
+          <span className="flex">Sort By
+            <span><FaCaretDown  /></span>
+            
+          </span>
+        </span>
+        </div>
+        <div className="max-ss:h-auto max-ss:w-[391px] w-[1440px ] max-ss:grid  flex ">
         <div className="">
         <SidebrPrdAll />
 
@@ -385,6 +397,49 @@ export default function SignUP() {
 </div>
 </div>
 
+
+
+{/* last */}
+<div className="w-[1092px ] h-[259px] border-t-[1px] border-[#E5E5E5] ">
+<p className="mt-10 font-medium text-[19px] ">Related Categories</p>
+
+<div className="max-ss:w-auto w-[1092px ] h-[174px] flex flex-wrap ">
+<div className="w-[160.83px] h-[34px] border-[1px] rounded-[20px] mt-6 py-2 px-[5.83] text-[12px] text-center ">Best Selling Products</div>
+
+<div className="w-[160.83px] h-[34px] border-[1px] rounded-[20px] mt-6 py-2 px-[5.83] text-[12px] text-center ">Best Shoes</div>
+
+
+<div className="w-[160.83px] h-[34px] border-[1px] rounded-[20px] mt-6 py-2 px-[5.83] text-[12px] text-center  ">New Basketball Shoes</div>
+
+
+<div className="w-[160.83px] h-[34px]  border-[1px] rounded-[20px] mt-6 py-2 px-[5.83] text-[12px] text-center ">New Football Shoes</div>
+
+
+<div className="w-[160.83px] h-[34px]  text-[12px] text-center   border-[1px] rounded-[20px] mt-6 py-2 px-[5.83px]  ">New Men's Shoes</div>
+
+
+<div className="w-[160.83px] h-[34px]  text-[12px] text-center  border-[1px] rounded-[20px] mt-6 py-2 px-[5.83] ">New Running Shoes</div>
+
+
+<div className="w-[160.83px] h-[34px] text-[12px] text-center    border-[1px] rounded-[20px] mt-6 py-2 px-[5.83]">Best Men's Shoes</div><br />
+
+<div className="w-[160.83px] h-[34px]  text-[12px] text-center  border-[1px] rounded-[20px] mt-6 py-2 px-[5.83]">Best Men's Shoes</div>
+
+
+<div className="w-[160.83px] h-[34px] text-[12px] text-center  border-[1px] rounded-[20px] mt-6 py-2 px-[5.83px] ">Best Men's Shoes</div>
+
+<div className="w-[160.83px] h-[34px]  text-[12px] text-center  border-[1px] rounded-[20px] mt-6 py-2 px-[5.83px] ">Best Men's Shoes</div>
+
+</div>
+
+
+
+
+
+
+
+
+</div>
 </div>
 
 
@@ -395,47 +450,7 @@ export default function SignUP() {
 
     </div>
 
-    {/* last */}
-<div className="w-[1092px ] h-[259px] border-[1px] border-[#E5E5E5] ">
-<p className="mt-10">Related Categories</p>
 
-<div className="max-ss:w-auto w-[1092px ] h-[174px] flex flex-wrap ">
-<div className="w-[160.83px] h-[34px] mt-6 px-2 py-[22.83] text-[12px] text-center ">Best Selling Products</div>
-
-<div className="w-[160.83px] h-[34px] mt-6 px-2 py-[22.83] text-[12px] text-center border-[1px] bg-[#CCCCCC] rounded-[20px]  ">Best Shoes</div>
-
-
-<div className="w-[160.83px] h-[34px] mt-6 px-2 py-[22.83] text-[12px] text-center ">New Basketball Shoes</div>
-
-
-<div className="w-[160.83px] h-[34px] mt-6 px-2 py-[22.83] text-[12px] text-center ">New Football Shoes</div>
-
-
-<div className="w-[160.83px] h-[34px] mt-6 px-2 py-[22.83] text-[12px] text-center ">New Men's Shoes</div>
-
-
-<div className="w-[160.83px] h-[34px] mt-6 px-2 py-[22.83] text-[12px] text-center ">New Running Shoes</div>
-
-
-<div className="w-[160.83px] h-[34px] mt-6 px-2 py-[22.83] text-[12px] text-center border-[1px]">Best Men's Shoes</div><br />
-
-<div className="w-[160.83px] h-[34px] mt-6 px-2 py-[22.83] text-[12px] text-center ">Best Men's Shoes</div>
-
-
-<div className="w-[160.83px] h-[34px] mt-6 px-2 py-[22.83] text-[12px] text-center ">Best Men's Shoes</div>
-
-<div className="w-[160.83px] h-[34px] mt-6 px-2 py-[22.83] text-[12px] text-center ">Best Men's Shoes</div>
-
-</div>
-
-
-
-
-
-
-
-
-</div>
 
     </>
     )

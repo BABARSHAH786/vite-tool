@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaCaretDown } from 'react-icons/fa';
+
 
 export default function SidebrPrdAll() {
   return (
@@ -54,6 +56,7 @@ export default function SidebrPrdAll() {
         {/* price */}
         <div className="w-[192px ] h-[134px]  ">
                   <p className="font-medium">Shop By Price</p>
+                  <FaCaretDown  />
                   <input type="checkbox" />
                   <span>Under ₹ 2 500.00</span>
                 <div>

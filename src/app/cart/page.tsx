@@ -3,11 +3,11 @@ import Link from "next/link";
 import { FaHeart, FaTrash } from "react-icons/fa";
 export default function Cart() {
   return (
-    <div className="w-[1440px ]  flex ">
-      <div className="ml-10 w-[1100px ] h-[485px] mt-10 ml-[155px]  ">
-        <div className="h-[547px ] flex ">
+    <div className="max-ss:w-[410px] max-ss:grid w-[1440px ]  flex ">
+      <div className="max-ss:ml-2 ml-10 w-[1100px ] h-[485px] mt-10 ml-[155px]  ">
+        <div className="max-ss:grid h-[547px ] flex ">
           <div className="w-[733px] h-[547px ] text-[23px] ">
-            <div className="w-[681px] h-[62px ] bg-[#F7F7F7] ">
+            <div className="max-ss:w-[410px] w-[681px] h-[62px ] bg-[#F7F7F7] ">
               <p className="text-[34px] " >Free Delivery</p>
               <span>Applies to orders of ₹ 14 000.00 or more.</span>
               <span>View details</span>
@@ -85,9 +85,9 @@ export default function Cart() {
             </div>
             
  {/* btn */}
- <div className="max-ss:px-[10px] text-[#FFFFFF] py-1 max-ss:ml-[25px] mt-10  gap-2 flex " >
+ <div className=" max-ss:px-[10px] text-[#FFFFFF] py-1 max-ss:ml-[10px] mt-10  gap-2 flex " >
            <Link href={'/checkout'} >
-           <button className="max-ss:ml-[25px] w-[225px ]   h-[60px] bg-[#111111] rounded-[30px] py-[18px] px-[100px]  ">Member Checkout</button>
+           <button className="max-ss:ml-[0px] w-[225px ]   h-[60px] bg-[#111111] rounded-[30px] py-[18px] px-[100px]  ">Member Checkout</button>
            </Link>
        
            </div>

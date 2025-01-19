@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import Link from "next/link";
+import Link from "next/link";
 export default function SecMid() {
   return (
     <div className="max-ss:mr-5">
@@ -17,7 +17,10 @@ export default function SecMid() {
         <div className="w-[1008px ] h-[177px]  ">
             <p className="max-ss:ml-[2px ] max-ss:text-[30px] ml-[100px] text-[54px] mt-8 font-medium  text-center  ">STEP INTO WHAT FEELS GOOD</p>
             <p className="text-center mt-8">Cause everyone should know the feeling of running in that perfect pair.</p>
+            <Link href={'/all-product-page'}>
+
             <button className="max-ss:hidden max-ss:ml-[10px ] text-white w-[110px ] h-[39px] bg-[#111111] rounded-[30px] py-[7px] px-[22px] justify-center ml-[624px] mt-8 items-center ">Find Your Shoe</button>
+            </Link>
         
 
         </div>

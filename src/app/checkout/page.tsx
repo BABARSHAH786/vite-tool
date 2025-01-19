@@ -5,13 +5,13 @@ export default function CheckOut(){
     return (
         <div>
 
-      <div className="w-[880px]   relative left-[289px] flex">
+      <div className="max-ss:ml-[-270px] max-ss:grid max-ss:w-[410px] w-[880px]   relative left-[289px] flex ">
         {/* left */}
         <div className="w-[440px]  ">
           <div className="h-[386px] grid gap-1 relative pt-5 ">
             <h3 className="font-medium text-[21px] leading-[23px] ">How would you like to get your order?</h3>
   
-            <div className="h-[208px] pt[7px] pr-[2.39px] pb-[9px] text-[15px] text-[#757575]  ">
+            <div className="max-ss:w-[410px] h-[208px] pt[7px] pr-[2.39px] pb-[9px] text-[15px] text-[#757575]  ">
               Customs regulation for India require a copy of the recipient&apos;s KYC. The address on the KYC needs to match the shipping address. Our courier will contact you via SMS/email to obtain a copy of your KYC. The KYC will be stored securely and used solely for the purpose of clearing customs (including sharing it with customs officials) for all orders and returns. If your KYC does not match your shipping address, please click the link for more information.<b className="underline"> Learn More</b>
             </div>
             
@@ -19,23 +19,23 @@ export default function CheckOut(){
           <div className="h-[82px] pt[7px] pr-[2.39px] pl-[21px] py-[29px] border-[#111111]  border-[1px] flex ">
           <FaBagShopping />
 
-            <h2 className="font-medium text-[15px] ml-4">Deliver It</h2>
+            <h2 className="max-ss:w-[355px] font-medium text-[15px] ml-4">Deliver It</h2>
           </div>
         </div>
           
   
         {/* form */}
-        <div className="w-[440px]  ">
+        <div className="max-ss:w-[385px] w-[440px]  ">
           <form>
              <label className="font-semibold text-[21px] leading-[23px]" >Enter your name and address:</label><br />
-            <input className="border-[1px] mt-3 border-[#CCCCCC] w-[440px] h-[56px] rounded-[4px] py-4 pl-4 text-[#111111] " type="text" placeholder="First Name" /> <br />
+            <input className="max-ss:w-[385px] border-[1px] mt-3 border-[#CCCCCC] w-[440px] h-[56px] rounded-[4px] py-4 pl-4 text-[#111111] " type="text" placeholder="First Name" /> <br />
   
-            <input className="border-[1px] mt-3 border-[#CCCCCC] w-[440px] h-[56px] rounded-[4px] py-4 pl-4 text-[rgb(17,17,17)] " type="text" placeholder="Last Name" />
-            <input className="border-[1px] mt-3 border-[#CCCCCC] w-[440px] h-[56px] rounded-[4px] py-4 pl-4 text-[#111111] " type="text" placeholder="Address Line 1" />
+            <input className="max-ss:w-[385px] border-[1px] mt-3 border-[#CCCCCC] w-[440px] h-[56px] rounded-[4px] py-4 pl-4 text-[rgb(17,17,17)] " type="text" placeholder="Last Name" />
+            <input className="max-ss:w-[385px] border-[1px] mt-3 border-[#CCCCCC] w-[440px] h-[56px] rounded-[4px] py-4 pl-4 text-[#111111] " type="text" placeholder="Address Line 1" />
             <p className="text-[11px] ">We do not ship to P.O. boxes</p>
-            <input className="border-[1px] mt-3 border-[#CCCCCC] w-[440px] h-[56px] rounded-[4px] py-4 pl-4 text-[#111111] " type="text" placeholder="Address Line 2" />
+            <input className="max-ss:w-[385px] border-[1px] mt-3 border-[#CCCCCC] w-[440px] h-[56px] rounded-[4px] py-4 pl-4 text-[#111111] " type="text" placeholder="Address Line 2" />
             
-            <input className="border-[1px] mt-3 border-[#CCCCCC] w-[440px] h-[56px] rounded-[4px] py-4 pl-4 text-[#111111] " type="text" placeholder="Address Line 3" />
+            <input className="max-ss:w-[385px] border-[1px] mt-3 border-[#CCCCCC] w-[440px] h-[56px] rounded-[4px] py-4 pl-4 text-[#111111] " type="text" placeholder="Address Line 3" />
        <span className="w-[211px] h-[56px] mt-3 ">
             <input className="border-[1px] border-[#CCCCCC] w-[211px] h-[56px] rounded-[4px] py-4 pl-4 text-[#111111] " type="text" placeholder="Postal Code" />
          </span>
@@ -79,11 +79,11 @@ export default function CheckOut(){
   
              {/*ADD TWO RADIO BTN WITH TEXT  */}
   
-              <div className="w-[440px] h-[60px] px-[185px] py-[16px] bg-[#F5F5F5] mt-9">
-                <p className="text-[15px ] tracking-[0.5%] text-center ">Continue</p>
+              <div className="max-ss:w-[385px] w-[440px] h-[60px] px-[185px] py-[16px] bg-[#F5F5F5] mt-9">
+                <p className=" text-[15px ] tracking-[0.5%] text-center ">Continue</p>
               </div>
-              <div className="w-[440px] h-[316px] pt-[280px] rounded-[30px]  ">
-                <p className="font-medium border-[#E5E5E5] rounded-[30px] text-[#111111] pt-[21px] pb-[12px] text-[20px ] tracking-[0.5%] text-center ">Delivery</p>
+              <div className="max-ss:hidden w-[440px] h-[316px] pt-[280px] rounded-[30px]  ">
+                <p className="max-ss:hidden font-medium border-[#E5E5E5] rounded-[30px] text-[#111111] pt-[21px] pb-[12px] text-[20px ] tracking-[0.5%] text-center ">Delivery</p>
                 <p className="font-medium border-[#E5E5E5] pt-[21px] pb-[4px] text-[15px ] tracking-[0.5%] text-center ">Billing</p>
                  <p className="font-medium border-[#E5E5E5] pt-[21px] pb-[4px] text-[15px ] tracking-[0.5%] text-center ">Payment</p>
   

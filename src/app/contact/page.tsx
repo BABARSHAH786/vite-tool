@@ -4,11 +4,11 @@ import Link from "next/link";
 export default function Contact(){
     return(
         <section>
-            <div className="max-ss:ml-0 ml-[230px] ">
+            <div className="max-ss:w-[412px] max-ss:ml-0 ml-[230px] ">
                 <div className="max-ss:w-[12px]  text-center text-[32px] leading-[36px] font-medium text-[#111111] ">GET HELP</div>
-                <div className="border-[1px] mt-5 w-[457px] flex h-14 justify-center align-center ml-[421px] rounded-sm ">
+                <div className="max-ss:ml-3 border-[1px] mt-5 w-[457px] flex h-14 justify-center align-center ml-[421px] rounded-sm ">
                 <input className="" placeholder="What can we help you with?" />
-                <FaSearch className="ml-[241px] mt-3 items-end" />
+                <FaSearch className="max-ss:ml-3 ml-[241px] mt-3 items-end" />
                 </div>
                 <h2 className="text-[34px] font-bold ">WHAT PAYMENT OPTIONS CAN I USE ON NIKE ORDERS?</h2>
                 <p className="mt-3">We want to make buying your favourite Nike shoes and gear online fast and easy, and we accept the following payment options:</p>
@@ -29,7 +29,7 @@ export default function Contact(){
 
                 <p className="font-semibold mt-5">FAQs</p>
                 <p className="font-semibold">Does my card need international purchases enabled?</p>
-                <p className="w-[842px] ">Yes, we recommend asking your bank to enable international purchases on your card. You will be notified at checkout if international purchases need to be enabled.</p>
+                <p className="w-[842px] ">Yes, we recommend asking your bank to enable international purchases on your card.<br /> You will be notified at checkout if international purchases need to be enabled.</p>
                 <p className="mt-3 ">Please note, some banks may charge a small transaction fee for international orders.</p>
 
                 <p className="font-semibold mt-5">You would I pay for my order with multiple methods?</p>

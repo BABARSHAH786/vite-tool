@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Footer(){
     return(
-        <div className="max-ss:w-[440px] max-ss:h-[340px] max-ss:mt-[440px] w-[1440px] h-[331px] bg-[rgb(17,17,17)] ">
+               <div className="max-ss:w-[440px] max-ss:h-[340px] max-ss:mt-[440px] w-[1440px] h-[331px] bg-[rgb(17,17,17)] ">
                  <footer className="  h-[241px]   flex text-[#FFFFFF] ">
 <div className='flex ml-[34px]  mt-[40px] '>
 <div className='w-[245px] '> 
@@ -56,21 +56,12 @@ export default function Footer(){
       <FaYoutube className='bg-black rounded-[30px]' size={30} color="gray" />
       <FaInstagram className='bg-black rounded-[30px]' size={30} color="gray" />
 
-
-
-    
-
       </div>
 
 
       
       </div>
  
-
-
-
-
-
 </footer>
 
 {/* bottom */}

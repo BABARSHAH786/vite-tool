@@ -1,4 +1,5 @@
 import * as React from "react"
+import Link from "next/link";
 
 
 
@@ -6,8 +7,8 @@ import Image from "next/image";
 // import Link from "next/link";
 export default function SecTop() {
   return (
-    <div className="w-[1440px ] bg-gray-50 ">
-        <div className="w-[1440px ] h-11 max-ss:h-[90px] ">
+    <div className="w-[1440px ]  ">
+        <div className=" h-11 max-ss:h-[90px] bg-[#f5f5f5] ">
             <p className="font-medium text-[15px] text-center  ">Hello Nike App</p>
             <p className="text-center max-ss:w-[310px ] max-ss:h-[45px] ">Download the app to access everything Nike. Get Your Great</p>
         
@@ -15,7 +16,7 @@ export default function SecTop() {
         </div>
         <div className="w-[1344px ] h-[970px] ">
         <Image
-          className="w-[1344px ] h-[700px] max-ss:w-[310px ] max-ss:h-[235px] "
+          className="w-[1244px ] h-[700px] max-ss:w-[310px ] max-ss:h-[235px] "
           src={"/Image.png"}
           alt="shoes"
           width={1344}
@@ -47,7 +48,9 @@ export default function SecTop() {
            <div className="max-ss:hidden max-ss:mt-[-340px] w-[340px ] h-[52px]">
             <p className="mt-3 ml-12 font-medium " >Best of Air Max</p>
             <div className="w-[164px ] h-[48px] flex ml-[1277px] ">
+            <Link href={'/all-product-page'}>
             <p className="mt-3 ml-12 font-medium" >Shop</p>
+            </Link>
             <Image
           className=""
           src={"/Frame.png"}

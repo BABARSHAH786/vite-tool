@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import Link from "next/link";
+import Link from "next/link";
 export default function SecEnd() {
   return (
     <div>
@@ -17,7 +17,9 @@ export default function SecEnd() {
             <h3 className="text-[52px] max-ss:text-[23px] leading-[60px] text-center font-medium ml-[48px]">FLIGHT ESSENTIALS</h3>
             <p className="text-center mt-8 max-ss:w-[310px] max-ss:ml-12">Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.</p>
             <div className="flex justify-center mt-9 ">
-            <button className="w-[110px ] text-white h-[39px] bg-[#111111] rounded-[30px] py-[7px] px-[22px]   ">Shop</button>
+           <Link href={'/all-product-page'}>
+            <button className="w-[110px ] text-white h-[39px] bg-[#111111] rounded-[30px] py-[7px] px-[22px]   ">Shop</button>            </Link>
+
             </div>
 
 
