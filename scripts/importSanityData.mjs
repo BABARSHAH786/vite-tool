@@ -59,6 +59,7 @@ async function importData() {
         inventory: product.inventory,
         colors: product.colors || [], // Optional, as per your schema
         status: product.status,
+        
         description: product.description,
         image: imageRef ? {
           _type: 'image',
