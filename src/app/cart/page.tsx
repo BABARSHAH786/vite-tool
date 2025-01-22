@@ -24,7 +24,7 @@ export default function Cart() {
           />
           <div className="ml-5 text-[15px]">
             <p className="font-medium">Nike Dri-FIT ADV TechKnit Ultra       <b className="font-semibold ml-[178px]">MRP: ₹ 3 895.00</b></p>
-            <div className="text-[#757575] ">            <p>Men's Short-Sleeve Running Top</p>
+            <div className="text-[#757575] ">            <p>Men&apos;s Short-Sleeve Running Top</p>
             <p>Ashen Slate/Cobalt Bliss</p>
             <span>Size</span>
             <span>L</span>
@@ -46,7 +46,7 @@ export default function Cart() {
             <p className="font-medium">          Nike Air Max 97 SE
        <b className=" font-semibold ml-[258px] ">MRP: ₹ 16 995.00</b></p>
        <div className="text-[#757575] ">  
-            <p>Men's Shoes</p>
+            <p>Men&apos;s Shoes</p>
             <p>Flat Pewter/Light Bone/Black/White</p>
             <span>Size</span>
             <span>8</span>

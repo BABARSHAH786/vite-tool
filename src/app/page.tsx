@@ -1,15 +1,20 @@
 import { client } from "@/sanity/lib/client";
-import SecEnd from "./components/SectionEnd";
-import SecMid from "./components/SectionMid";
-import SecTop from "./components/SectionTop";
-import BlogCard from "./components/BlogCard";
+// import SecEnd from "./components/SectionEnd";
+// import SecMid from "./components/SectionMid";
+// import SecTop from "./components/SectionTop";
+import BlogCard from "./../copmnent/BlogCard";
+
+import { AddCartClient } from "./components/AddCartClient";
+
 
 
 
 // gem
 export default async function Home() {
+
+  // fetch data
   const query = `*[_type=='product'] | order(_createdAt asc){
-    productName, price, image, color, category, slug
+    productName, price, image, color, category, slug,status
   }`;
 
   const posts: Post[] = await client.fetch(query);
@@ -21,6 +26,10 @@ export default async function Home() {
           <BlogCard post={post} key={post.productName || post._id} />
         ))}
       </section>
+
+     {/* add to cart */}
+     <AddCartClient />
+
       {/* 
     <SecTop />
     <SecMid />

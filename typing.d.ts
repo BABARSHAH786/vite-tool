@@ -6,8 +6,9 @@ type Post = {
     slug:string,
     productName:string,
     price:string,
-    color:string,
+    colors:string,
     category:string,
+    status:string,
 
 }
 

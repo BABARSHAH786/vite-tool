@@ -46,7 +46,7 @@ export default function Contact(){
                 <FaThumbsUp />
                 <FaThumbsDown />
                 </div>
-                <p className="font-medium">WHAT ARE NIKE'S DELIVERY OPTIONS?</p>
+                <p className="font-medium">WHAT ARE NIKE&apos;S DELIVERY OPTIONS?</p>
                 <p className="font-medium mb-3">HOW DO I GET FREE DELIVERY ON NIKE ORDERS?</p>
 
                 

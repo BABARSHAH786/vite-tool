@@ -1,9 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { urlForImage } from "./../../sanity/lib/image";
-
-// no voice video full code for fetch and slug
-// make script folder add file
+import { urlForImage } from "../sanity/lib/image";
 
 export default function BlogCard({post}:{post:Post}) {
   return (
@@ -21,20 +18,21 @@ export default function BlogCard({post}:{post:Post}) {
       {/* Title and Summary */}
       <div className="flex flex-col justify-between gapx-y-4  p-4">
         <h2 className="text-lg font-semibold line-clamp-2 text-dark dark:text-light leading-tight mb-2">
-          {post.title}
-        </h2>
-        <p className="text-dark/70 dark:text-light/70 line-clamp-3">
-          {post.summary}
-        </p>
+        <p>{post.status} </p>
 
-        {/* Read More dynamic Link */}
-        <Link
-          href="`/blog/${post.slug}`"
-          className="block px-4 py-1 text-center bg-accentDarkSecondary  rounded text-dark font-semibold mt-4"
-        >
-          Read More
-        </Link>
-        {/* <Link href="/blog/[slug]?slug=1">Product Details</Link> */}
+          {post.category}
+        </h2>
+       
+        <p>{post.productName} </p>
+
+        <p>{post.colors} </p>
+        <p className="w-[374px]  leading-[28px] text-[24px]  mt-6 ">{post.price}
+</p>
+
+        
+        {/* <Link
+       */}
+        <Link href="/blog/[slug]?slug=1">Product Details</Link>
       </div>
     </section>
   );
