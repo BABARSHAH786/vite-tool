@@ -10,20 +10,24 @@ export default function BlogCard({post}:{post:Post}) {
         <Image
           src={urlForImage(post.image)}
           alt="AI for everyone"
-          fill
+          width={500}
+          height={500}
+          // fill
           className="object-cover rounded-t"
         />
       </div>
+      {/* <p>{post.image} </p> */}
 
       {/* Title and Summary */}
       <div className="flex flex-col justify-between gapx-y-4  p-4">
-        <h2 className="text-lg font-semibold line-clamp-2 text-dark dark:text-light leading-tight mb-2">
+        <h2 className="text-lg font-semibold line-clamp-2 text-dark dark:text-light leading-tight mb-2">  
+              <p>{post.productName} </p>
+
         <p>{post.status} </p>
 
           {post.category}
         </h2>
        
-        <p>{post.productName} </p>
 
         <p>{post.colors} </p>
         <p className="w-[374px]  leading-[28px] text-[24px]  mt-6 ">{post.price}
@@ -32,7 +36,14 @@ export default function BlogCard({post}:{post:Post}) {
         
         {/* <Link
        */}
-        <Link href="/blog/[slug]?slug=1">Product Details</Link>
+        {/* <Link href="/blog/[slug]">Product Details</Link> */}
+        <Link
+          href={`/blog/${post.slug}`}
+          className="block px-4 py-1 text-center bg-accentDarkSecondary  rounded text-dark font-semibold mt-4"
+        >
+          Product Detail
+        </Link>
+        
       </div>
     </section>
   );

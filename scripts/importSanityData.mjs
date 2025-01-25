@@ -41,6 +41,10 @@ async function importData() {
 
     // API endpoint containing car data
     const response = await axios.get('https://template-03-api.vercel.app/api/products');
+    // sir mubashir auth work
+    {
+       
+    }
     const products = response.data.data;
     console.log("products ==>> ", products);
 

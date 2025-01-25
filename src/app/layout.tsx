@@ -26,10 +26,31 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* clerk work start */}
+        {/* <ClerkProvider>
+      <html lang="en">
+        <body>
+          <header>
+            <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </header>
+          <main>{children}</main>
+        </body>
+      </html>
+    </ClerkProvider> */}
+    {/* clerk end */}
+
+
+
         <Navbar />
         {children}
         <Footer />
