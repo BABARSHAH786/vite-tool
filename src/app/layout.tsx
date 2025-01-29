@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import { ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+// import { ClerkProvider, SignedIn, SignedOut, SignIn, SignInButton, UserButton } from "@clerk/nextjs";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,30 +33,43 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* clerk work start */}
-        {/* <ClerkProvider>
-      <html lang="en">
-        <body>
-          <header>
-            <SignedOut>
-              <SignInButton />
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
-          </header>
-          <main>{children}</main>
-        </body>
-      </html>
-    </ClerkProvider> */}
-    {/* clerk end */}
+          {/* clerk work start */}
+   <ClerkProvider>
+   <header className="overflow-x-hidden flex  "  >
+   <Navbar />
+   <div className="ml-[-93px] mt-1   ">
+
+     <SignedOut>
+       <SignInButton />
+     </SignedOut>
+     <SignedIn>
+       <UserButton   />
+       <SignedOut />
+     </SignedIn>
+     </div>
+   </header>
+   <main>{children}</main>
+ </ClerkProvider>
+{/* clerk end */}
+       
+
+      
 
 
 
-        <Navbar />
-        {children}
+        {/* {children} */}
         <Footer />
       </body>
     </html>
   );
 }
+
+
+
+
+
+
+
+
+
+

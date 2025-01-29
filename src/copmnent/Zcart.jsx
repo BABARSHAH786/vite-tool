@@ -148,6 +148,7 @@
 
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { urlForImage } from "../sanity/lib/image";
 
 export default function AddtoCartt({ post }) {
@@ -166,14 +167,14 @@ export default function AddtoCartt({ post }) {
   };
 
   return (
-    <section key={post._id} className="flex flex-col ...">
+    <section key={post._id} className="ml-2 w-[900px] flex flex-col ...">
       {" "}
       {/* ... rest of your JSX */}
       <Image
         src={urlForImage(post.image)}
         alt="AI for everyone"
-        width={500}
-        height={500}
+        width={350}
+        height={350}
         // fill
         className="object-cover rounded-t"
       />
@@ -186,11 +187,18 @@ export default function AddtoCartt({ post }) {
           <p>{post.status} </p>
 
           {post.category}
+          <Link
+          href={`/blog/${post.slug}`}
+          className="block px-4 py-1 text-center bg-accentDarkSecondary  rounded text-dark font-semibold mt-4"
+        >
+          Product Detail
+        </Link>
 
         <p>{post.colors} </p>
       </div>
+      
       {/* add to cart work */}
-      <button
+            <button
         onClick={() => {
           const productToAdd = {
             name: post.productName,
@@ -204,10 +212,11 @@ export default function AddtoCartt({ post }) {
           };
           handleClick(productToAdd);
         }}
-        className="p-3 border rounded"
+        className="p-3 border rounded    "
       >
         Add to Cart
       </button>
+
     </section>
   );
 }

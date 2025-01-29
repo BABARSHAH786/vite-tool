@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaCartShopping } from "react-icons/fa6";
+
+
 export default function Navbar() {
   return (
-    <div className="max-ss:w-[410px] w-[1440px] ">
+    <div className="max-ss:w-[410px] w-[1440px] xl:w-full ">
       <div className=" bg-[#f5f5f5]  h-9 w-[1490px] max-sm:w-auto flex">
         <div className="ml-12 max-ss:ml-[5px] ">
         <Image
@@ -14,7 +17,7 @@ export default function Navbar() {
         />
         </div>
 
-        <div className="max-md:ml-2 max-ss:ml-[27px] max-sm:mb-1 w-[272px] h-[36px] text-[11px] font-medium  justify-between ml-[1022px] py-2  flex  ">
+        <div className="max-md:ml-2 max-ss:ml-[27px] max-sm:mb-1 w-[272px] h-[36px] text-[11px] font-medium  justify-between ml-[845px] py-2  flex  ">
           <Link className="relative left-[45px] mb-4  " href="/all-product-page">
             Find a store |
           </Link>
@@ -24,9 +27,22 @@ export default function Navbar() {
           <Link className="relative left-[45px]  " href="/join-us">
             Join Us |
           </Link>
+          {/* <ClerkProvider>
           <Link className="relative left-[45px]  " href="/sign-in">
             Sign In 
           </Link>
+          <SignIn>
+
+          </SignIn>
+          <SignedOut>
+            <SignInButton />
+          </SignedOut>
+          
+
+          <SignIn  >
+            <UserButton mode='modal' />
+          </SignIn>
+          </ClerkProvider> */}
         </div>
       </div>
 
@@ -42,7 +58,7 @@ export default function Navbar() {
         />
                     </Link>
 
-        <div className="max-md:hidden w-[1211px] max-ss:hidden h-[36px]  ml-[210px] items-center  justify-between flex ">
+        <div className="max-md:hidden w-[1211px] max-ss:hidden h-[36px]  ml-[115px] items-center  justify-between flex ">
           <div className="max-ss:hidden w-[272px] h-[36px] gap-6  justify-between flex  relative left-[107px] ">
             <Link className="relative left-[45px]  " href="/all-product-page">
               {" "}
@@ -64,7 +80,7 @@ export default function Navbar() {
               SNKRS
             </Link>
           </div>
-          <div className="max-ss:hidden w-[180px] h-[40px] relative left-5 flex ml-[320px] bg-[#f5f5f5] rounded-[10px] ">
+          <div className="max-ss:hidden w-[180px] h-[40px] relative left-5 flex ml-[260px] bg-[#f5f5f5] rounded-[10px] ">
 
             <Image
               className="pt-[10px] pl-[10px] w-[1390px] max-ss:w-[310px] "
@@ -74,22 +90,20 @@ export default function Navbar() {
               height={24}
             />
 
-            <input className="ml-7 bg-[#f5f5f5] rounded-[10px]" placeholder="Search" />
+            <input className="ml-2 bg-[#f5f5f5] rounded-[10px]" placeholder="Search" />
           </div>
           <Image
-            className="max-ss:hidden  relative left-5"
+            className="max-ss:hidden  relative left-2 ml-[-80px] "
             src={"/Vector.png"}
             alt=""
             width={24}
             height={24}
           />
-          <Image
-            className="max-ss:hidden relative ml-[-64px] "
-            src={"/Vector (1).png"}
-            alt=""
-            width={24}
-            height={24}
-          />
+           <Link className="" href="/cart">
+            <FaCartShopping className="max-ss:hidden relative ml-[-164px] " />
+
+          </Link>
+         
         </div>
 
        

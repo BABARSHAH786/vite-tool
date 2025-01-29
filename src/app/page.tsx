@@ -1,16 +1,17 @@
 import { client } from "@/sanity/lib/client";
 // import SecEnd from "./components/SectionEnd";
 // import SecMid from "./components/SectionMid";
-// import SecTop from "./components/SectionTop";
 
 // import ProductList from "@/copmnent/ProductList";
 import IProduct from "@/types/product";
 import AddtoCartt from "@/copmnent/Zcart";
+import SecTop from "./components/SectionTop";
 
 
 
 
 
+// https://www.youtube.com/watch?v=PhciU8SQ8hs user uth video for dashboard
 // gem
 export default async function Home() {
 
@@ -32,6 +33,7 @@ export default async function Home() {
 
   return (
     <div>
+      <SecTop />
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {posts.map((post: Post) => (
           // <BlogCard post={post} key={post.productName || post._id} />
@@ -40,6 +42,7 @@ export default async function Home() {
              {/* <ProductList products={products} /> */}
 
       </section>
+  
 
      {/* add to cart */}
 
