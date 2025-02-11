@@ -111,6 +111,32 @@ export default function CartPage() {
   );
 }
 
+
+// auth cler work
+// //use this server side
+// import { auth, currentUser } from "@clerk/nextjs/server";
+ 
+// export default async function Auths(){
+//     // const authentication = await auth()
+//     const users =await currentUser()
+//     const metadata = user?.publicmetadata 
+//     if(metadata?.acess)
+//     console.log(users);
+    
+//     // console.log(authentication);
+
+    
+
+//     return(
+//         <>
+// </>
+//     )
+// }
+
+
+
+
+
 // // templte 3 cart
 // // import Image from "next/image";
 // // import Link from "next/link";

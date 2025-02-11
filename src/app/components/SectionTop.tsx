@@ -45,7 +45,7 @@ export default function SecTop() {
         </div>
       </div>
 
-      
+
       
     </div>
   );
